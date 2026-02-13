@@ -7,10 +7,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-9 h-9 bg-blue-600 rounded flex items-center justify-center">
-              <div className="text-white font-bold text-xl">S</div>
-            </div>
-            <span className="text-xl font-semibold text-gray-900">Seba Digital</span>
+            <img src="./src/assets/logo.jpg" alt="Seba Digital Logo" className="w-24" />
           </div>
 
           {/* Navigation */}

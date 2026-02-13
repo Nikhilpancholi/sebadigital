@@ -9,10 +9,13 @@ export function Footer() {
           {/* Company info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 bg-blue-600 rounded flex items-center justify-center">
+              {/* <div className="w-9 h-9 bg-blue-600 rounded flex items-center justify-center">
                 <div className="text-white font-bold text-xl">S</div>
               </div>
-              <span className="text-xl font-semibold text-white">Seba Digital</span>
+              <span className="text-xl font-semibold text-white">Seba Digital</span> */}
+                       <div className="flex items-center gap-2">
+            <img src="./src/assets/logo.jpg" alt="Seba Digital Logo" className="w-24" />
+          </div>
             </div>
             <p className="text-sm mb-6">
               Your trusted electronics retailer in West Ealing, London. Quality products, expert advice, and unbeatable prices since 1990.
