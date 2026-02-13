@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, MapPin, Phone, Mail, CreditCard } from 'lucide-react';
+import logo from "../assets/logo.jpg";
 
 export function Footer() {
   return (
@@ -14,7 +15,7 @@ export function Footer() {
               </div>
               <span className="text-xl font-semibold text-white">Seba Digital</span> */}
                        <div className="flex items-center gap-2">
-            <img src="./src/assets/logo.jpg" alt="Seba Digital Logo" className="w-24" />
+            <img src={logo} alt="Seba Digital Logo" className="w-24" />
           </div>
             </div>
             <p className="text-sm mb-6">

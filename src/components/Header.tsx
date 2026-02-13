@@ -1,4 +1,5 @@
 import { ShoppingCart, Phone } from 'lucide-react';
+import logo from "../assets/logo.jpg";
 
 export function Header() {
   return (
@@ -7,7 +8,7 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="./src/assets/logo.jpg" alt="Seba Digital Logo" className="w-24" />
+            <img src={logo} alt="Seba Digital Logo" className="w-24" />
           </div>
 
           {/* Navigation */}
