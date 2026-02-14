@@ -1,5 +1,6 @@
 import { Facebook, Twitter, Instagram, MapPin, Phone, Mail, CreditCard } from 'lucide-react';
 import { Link } from 'react-router';
+import logo from '../assets/logo.jpg';
 
 export function Footer() {
   return (
@@ -9,11 +10,8 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company info */}
           <div>
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 bg-blue-600 rounded flex items-center justify-center">
-                <div className="text-white font-bold text-xl">S</div>
-              </div>
-              <span className="text-xl font-semibold text-white">Seba Digital</span>
+            <Link to="/" className="flex items-center gap-2">
+              <img src={logo} alt="Seba Digital" className="h-10 w-auto" />
             </Link>
             <p className="text-sm mb-6">
               Your trusted electronics retailer in West Ealing, London. Quality products, expert advice, and unbeatable prices since 1990.
