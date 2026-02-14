@@ -1,5 +1,9 @@
 import { ArrowRight } from 'lucide-react';
-
+import productHeadphones from '../assets/product-headphones.jpg';
+import productbluray from '../assets/product-blu-ray.jpg';
+import productcdr from '../assets/product-cdr.jpg';
+import productearbuds from '../assets/product-earbuds.jpg';
+ 
 export function FeaturedProducts() {
   const products = [
     {
@@ -9,13 +13,13 @@ export function FeaturedProducts() {
       originalPrice: '£13.95',
       badge: 'Best Seller',
       badgeColor: 'bg-blue-600',
-      image: 'https://images.unsplash.com/photo-1679533662345-b321cf2d8792?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aXJlbGVzcyUyMGhlYWRwaG9uZXMlMjBibGFja3xlbnwxfHx8fDE3NzA5MzY0MDZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: productHeadphones,
     },
     {
       name: 'Verbatim BD-R SL 25GB',
       description: '6x speed, Jewel case Pack of 5',
       price: '£13.95',
-      image: 'https://images.unsplash.com/photo-1618034100983-e1d78be0dc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFuayUyMGR2ZCUyMGRpc2NzJTIwbWVkaWF8ZW58MXx8fHwxNzcwOTk5NjI3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: productbluray,
     },
     {
       name: 'Maxell CD-R Audio',
@@ -23,13 +27,13 @@ export function FeaturedProducts() {
       price: '£9.99',
       badge: 'Sale',
       badgeColor: 'bg-red-500',
-      image: 'https://images.unsplash.com/photo-1618034100983-e1d78be0dc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjZCUyMGF1ZGlvJTIwZGlzYyUyMHNwaW5kbGV8ZW58MXx8fHwxNzcwOTk5NjI4fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: productcdr,
     },
     {
       name: 'Panasonic RP-HV41E-W',
       description: 'Headphones - White',
       price: '£8.99',
-      image: 'https://images.unsplash.com/photo-1755182529034-189a6051faae?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGl0ZSUyMGVhcmJ1ZHMlMjBoZWFkcGhvbmVzfGVufDF8fHx8MTc3MDk5OTYyOHww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: productearbuds,
     },
   ];
 
@@ -53,7 +57,7 @@ export function FeaturedProducts() {
               key={index}
               className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow"
             >
-              <div className="relative bg-gray-50 p-6 aspect-square">
+              <div className="relative bg-gray-50 ">
                 {product.badge && (
                   <span className={`absolute top-4 left-4 ${product.badgeColor} text-white px-3 py-1 rounded-full text-xs font-semibold`}>
                     {product.badge}

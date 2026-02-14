@@ -1,4 +1,8 @@
 import { ArrowRight } from 'lucide-react';
+import productdvdrw from '../assets/product-dvd-rw.jpg';
+import producttape from '../assets/product-tape.jpg';
+import productdvd from '../assets/product-dvd.jpg';
+import productwall from '../assets/product-bracket.jpg';
 
 export function LatestArrivals() {
   const products = [
@@ -8,19 +12,19 @@ export function LatestArrivals() {
       price: '£12.99',
       badge: 'New',
       badgeColor: 'bg-green-500',
-      image: 'https://images.unsplash.com/photo-1618034100983-e1d78be0dc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxibGFuayUyMGR2ZCUyMGRpc2NzJTIwbWVkaWF8ZW58MXx8fHwxNzcwOTk5NjI3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: productdvdrw
     },
     {
       name: 'Maxell LR03 AAA Triple A Tape',
       description: 'AAA Batteries x10 Pack',
       price: '£2.99',
-      image: 'https://images.unsplash.com/photo-1644571663498-f4f18db66c17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYXR0ZXJpZXMlMjBwYWNrfGVufDF8fHx8MTc3MDk5OTYyOXww&ixlib=rb-4.1.0&q=80&w=1080',
+      image: producttape,
     },
     {
       name: 'TDK DVD-R 25 Pack',
       description: '16x speed, Recordable Media',
       price: '£14.99',
-      image: 'https://images.unsplash.com/photo-1618034100983-e1d78be0dc80?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjZCUyMGF1ZGlvJTIwZGlzYyUyMHNwaW5kbGV8ZW58MXx8fHwxNzcwOTk5NjI4fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: productdvd,
     },
     {
       name: 'Wall Bracket 22"-55"',
@@ -28,7 +32,7 @@ export function LatestArrivals() {
       price: '£19.99',
       badge: 'Popular',
       badgeColor: 'bg-yellow-500',
-      image: 'https://images.unsplash.com/photo-1684241142735-f5f10e9187bd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0diUyMHdhbGwlMjBtb3VudCUyMGJyYWNrZXR8ZW58MXx8fHwxNzcwOTk5NjI5fDA&ixlib=rb-4.1.0&q=80&w=1080',
+      image: productwall, 
     },
   ];
 
@@ -52,7 +56,7 @@ export function LatestArrivals() {
               key={index}
               className="bg-white rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow"
             >
-              <div className="relative bg-gray-50 p-6 aspect-square">
+              <div className="relative bg-gray-50 ">
                 {product.badge && (
                   <span className={`absolute top-4 left-4 ${product.badgeColor} text-white px-3 py-1 rounded-full text-xs font-semibold`}>
                     {product.badge}

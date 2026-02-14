@@ -1,5 +1,5 @@
 import { Facebook, Twitter, Instagram, MapPin, Phone, Mail, CreditCard } from 'lucide-react';
-import logo from "../assets/logo.jpg";
+import { Link } from 'react-router';
 
 export function Footer() {
   return (
@@ -9,15 +9,12 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              {/* <div className="w-9 h-9 bg-blue-600 rounded flex items-center justify-center">
+            <Link to="/" className="flex items-center gap-2 mb-4">
+              <div className="w-9 h-9 bg-blue-600 rounded flex items-center justify-center">
                 <div className="text-white font-bold text-xl">S</div>
               </div>
-              <span className="text-xl font-semibold text-white">Seba Digital</span> */}
-                       <div className="flex items-center gap-2">
-            <img src={logo} alt="Seba Digital Logo" className="w-24" />
-          </div>
-            </div>
+              <span className="text-xl font-semibold text-white">Seba Digital</span>
+            </Link>
             <p className="text-sm mb-6">
               Your trusted electronics retailer in West Ealing, London. Quality products, expert advice, and unbeatable prices since 1990.
             </p>
@@ -38,10 +35,10 @@ export function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Products</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Promotions</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
+              <li><Link to="/about" className="hover:text-white transition-colors">About Us</Link></li>
+              <li><Link to="/products" className="hover:text-white transition-colors">Products</Link></li>
+              <li><Link to="/promotions" className="hover:text-white transition-colors">Promotions</Link></li>
+              <li><Link to="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
             </ul>
           </div>
 
